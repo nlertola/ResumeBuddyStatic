@@ -11,10 +11,32 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
     <link rel="stylesheet" href="style.css">
     <link href="css/home.css" rel="stylesheet" />
+    <link href="css/temp.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   </head>
   <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">Resume Buddy</a>
+            <button class="navbar-toggler @NavButtonCssClass" type="button" aria-controls="navbarCollapse"
+                    aria-label="Toggle navigation" @onclick="ToggleNavMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse @NavBarCssClass" id="navbarCollapse" @onclick="ToggleNavMenu">
+                <ul class="navbar-nav w-100 mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                            <span class="oi oi-home" aria-hidden="true"></span> 
+                        </NavLink>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container">
+        <div class="alert alert-info">
+            Welcome to Resume Buddy. This is just a home page Beta. Functionality coming soon. If you must, contact me <a href="mailto:nlertola98@gmail.com">here</a>.
+        </div>
     <div class="row flex-lg-row-reverse align-items-center gy-5 py-5">
         <div class="col-12 col-lg-6">
             <img src="images/hero.jpg" alt="image of interviewee passing reume to interviewer" class="hero-img" />
@@ -92,6 +114,12 @@
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                 <button type="button" class="btn btn-primary">Try it out!</button>
             </div>
+        </div>
+    </div>
+    <div>
+        <div class="alert alert-info mt-5">
+            Thank you for visiting Resume Buddy. Again, this is just a home page Beta. 
+            Functionality coming soon. For questions, comments, and concerns; contact me <a href="mailto:nlertola98@gmail.com">here</a>.
         </div>
     </div>
 </div>
