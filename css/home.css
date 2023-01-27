@@ -1,0 +1,50 @@
+﻿main {
+    min-height: 100%;
+}
+.hero-img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.border-dashed {
+    border-style: dashed;
+}
+
+.container {
+    margin-top: 3rem;
+}
+body {
+    color: #505050;
+}
+
+.home-divider {
+    background-color: #696969;
+    width: 100%;
+    display: flex;
+    min-height: 20px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    box-shadow: inset 0px 14px 8px -10px #585858, inset 0px -14px 8px -10px #585858;
+}
+
+.home-divider > span {
+    margin: 10px;
+}
+
+ol > li {
+    line-height: 1.5em;
+    margin: 1.3em 0;
+}
+
+.how-it-works {
+    margin-top: 50px;
+    background-color: #e6f7ff;
+    border-radius: 20px;
+}
